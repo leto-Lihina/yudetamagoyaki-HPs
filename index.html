@@ -7,14 +7,31 @@
   <meta name="description" content="文字が表示されるだけの超ミニマルページ">
   <style>
     html, body { height: 100%; margin: 0; }
-    body { display: grid; place-items: center; font: 18px/1.8 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif; padding: 24px; }
-    main { max-width: 60ch; white-space: pre-wrap; word-break: break-word; }
-    @media (prefers-color-scheme: dark) { body { background: #0b0b0c; color: #eee; } }
+    body {
+      display: grid;
+      place-items: center;
+      font: 18px/1.8 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+      padding: 24px;
+    }
+    main {
+      max-width: 60ch;
+      white-space: pre-wrap;
+      word-break: break-word;
+      text-align: center;
+      color: #e53935; /* 赤にしたいならこのへん */
+      font-weight: bold;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0b0b0c; color: #eee; }
+      main { color: #ff7675; }
+    }
   </style>
 </head>
 <body>
-  二色の眼の竜よ！　深き闇より蘇り、怒りの炎で地上のすべてを焼き払え！　
-  エクシーズ召喚！　出でよ、ランク7！　
-  災い呼ぶ烈火の竜！　覇王烈竜オッドアイズ・レイジング・ドラゴン！
+  <main>
+    二色の眼の竜よ！　深き闇より蘇り、怒りの炎で地上のすべてを焼き払え！<br>
+    エクシーズ召喚！　出でよ、ランク7！<br>
+    災い呼ぶ烈火の竜！　覇王烈竜オッドアイズ・レイジング・ドラゴン！
+  </main>
 </body>
 </html>
